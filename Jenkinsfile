@@ -7,12 +7,13 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Test') {
       steps {
         withGradle() {
           sh './gradlew test'
         }
 
+        junit 'Test Results'
       }
     }
 
