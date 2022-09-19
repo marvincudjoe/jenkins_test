@@ -7,5 +7,14 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        withGradle() {
+          sh './gradlew test'
+        }
+
+      }
+    }
+
   }
 }
