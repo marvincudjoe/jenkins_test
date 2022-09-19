@@ -18,7 +18,7 @@ class TrieTest {
     void returnFalse_whenWordContainsNumber() {
         words = List.of(
                 "1");
-        words.forEach(word -> assertFalse(trie.addWord("asd")));//will fail
+        words.forEach(word -> assertFalse(trie.addWord(word)));
     }
 
     @Test
